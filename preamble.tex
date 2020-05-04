@@ -1,0 +1,57 @@
+\newcommand{\ThisTheme}{
+    \footnotesize {
+        \textsc{A General Text TextText}\\
+    } 
+    \footnotesize{
+        \textsc{A Specific text Text Text Text Text} \\
+    }
+    \Large{
+        \textsc{The theme of the pitch}
+    }
+}
+
+\newcommand{\ThisShortTheme}{Short theme}
+
+\newcommand{\ThisTitle}{\ThisTheme}
+\newcommand{\ThisShortTitle}{\ThisShortTheme}
+
+\newcommand{\ThisAuthorName}{Aurel Megnigbeto}
+\newcommand{\ThisShortAuthorName}{Aurel Megnigbeto}
+
+\newcommand{\ThisInstitute}{Institut de Mathématiques et de Sciences Physiques }
+\newcommand{\ThisInstituteShort}{IMSP}
+\newcommand{\ThisInstituteLocation}{Dangbo, Bénin}
+\newcommand{\ThisUniversity}{Université d'Abomey-Calavi}
+\newcommand{\ThisUniversityShort}{UAC}
+
+\newcommand{\ThisAuthorEmail}{aurel.megnigbeto@imsp-uac.org}
+
+
+% \setlist[]{labelindent=\parindent}
+
+\date{\today}
+
+\geometry{verbose,letterpaper,tmargin=20mm,bmargin=20mm,lmargin=20mm,rmargin=20mm}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle={\ThisTitle},
+    pdfauthor={\textcopyright\ \ThisAuthorName},
+}
+
+\newcommand{\ThisAuthor}{
+    \ThisAuthorName \\
+    \texttt{ \normalsize{  \href{mailto:\ThisAuthorEmail}{ \ThisAuthorEmail } } } \\ \\
+    \textsc{ \normalsize{ \ThisInstitute (\ThisInstituteShort)} },\\
+    \textsc{ \normalsize{ \ThisUniversity (\ThisUniversityShort)} }, \\
+    \textsc{ \normalsize{ \ThisInstituteLocation} } 
+}
+
+% \setlist[]{labelindent=\parindent}
+
+\addbibresource{source.bib}
+\graphicspath{{img/}}
